@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.efrei.ProjectCloudIntegration.ProjectCloudIntegrationApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-22T08:02:38" hostname="MacBook-Air-de-Ayyub.local" time="0.41">
+  <properties/>
+  <testcase name="contextLoads()" classname="fr.efrei.ProjectCloudIntegration.ProjectCloudIntegrationApplicationTests" time="0.41"/>
+  <system-out><![CDATA[09:02:37.727 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [fr.efrei.ProjectCloudIntegration.ProjectCloudIntegrationApplicationTests]: ProjectCloudIntegrationApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:02:37.773 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration fr.efrei.ProjectCloudIntegration.ProjectCloudIntegrationApplication for test class fr.efrei.ProjectCloudIntegration.ProjectCloudIntegrationApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v3.2.0-SNAPSHOT)
+
+2023-11-22T09:02:37.939+01:00  INFO 1291 --- [    Test worker] .ProjectCloudIntegrationApplicationTests : Starting ProjectCloudIntegrationApplicationTests using Java 18.0.1.1 with PID 1291 (started by ayyub in /Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration)
+2023-11-22T09:02:37.940+01:00  INFO 1291 --- [    Test worker] .ProjectCloudIntegrationApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-11-22T09:02:38.214+01:00  WARN 1291 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2023-11-22T09:02:38.231+01:00  INFO 1291 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-11-22T09:02:38.419+01:00  INFO 1291 --- [    Test worker] .ProjectCloudIntegrationApplicationTests : Started ProjectCloudIntegrationApplicationTests in 0.585 seconds (process running for 1.024)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
