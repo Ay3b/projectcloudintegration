@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="fr.efrei.projectcloudintegration.web.rest.ItemResourceIT" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-29T12:50:39" hostname="MacBook-Air-de-Ayyub.local" time="0.887">
+<testsuite name="fr.efrei.projectcloudintegration.web.rest.ItemResourceIT" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-29T13:43:21" hostname="MacBook-Air-de-Ayyub.local" time="0.924">
   <properties/>
-  <testcase name="createItem()" classname="fr.efrei.projectcloudintegration.web.rest.ItemResourceIT" time="0.887"/>
-  <system-out><![CDATA[13:50:33.108 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [fr.efrei.projectcloudintegration.web.rest.ItemResourceIT]: ItemResourceIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:50:33.334 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration fr.efrei.projectcloudintegration.ProjectCloudIntegrationApplication for test class fr.efrei.projectcloudintegration.web.rest.ItemResourceIT
+  <testcase name="createItem()" classname="fr.efrei.projectcloudintegration.web.rest.ItemResourceIT" time="0.924"/>
+  <system-out><![CDATA[14:43:15.438 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [fr.efrei.projectcloudintegration.web.rest.ItemResourceIT]: ItemResourceIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:43:15.648 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration fr.efrei.projectcloudintegration.ProjectCloudIntegrationApplication for test class fr.efrei.projectcloudintegration.web.rest.ItemResourceIT
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,36 +13,39 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::       (v3.2.0-SNAPSHOT)
 
-2023-11-29T13:50:33.978+01:00  INFO 13595 --- [    Test worker] f.e.p.web.rest.ItemResourceIT            : Starting ItemResourceIT using Java 17 with PID 13595 (started by ayyub in /Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration)
-2023-11-29T13:50:33.981+01:00  INFO 13595 --- [    Test worker] f.e.p.web.rest.ItemResourceIT            : No active profile set, falling back to 1 default profile: "default"
-2023-11-29T13:50:35.130+01:00  INFO 13595 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-29T13:50:35.272+01:00  INFO 13595 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 1 JPA repository interface.
-2023-11-29T13:50:35.808+01:00  WARN 13595 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
-2023-11-29T13:50:35.838+01:00  INFO 13595 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-11-29T13:50:36.061+01:00  INFO 13595 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-11-29T13:50:36.290+01:00  INFO 13595 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./build/h2db/data/demo user=SA
-2023-11-29T13:50:36.293+01:00  INFO 13595 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-11-29T13:50:36.438+01:00  INFO 13595 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-29T13:50:36.500+01:00  INFO 13595 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-2023-11-29T13:50:36.538+01:00  INFO 13595 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2023-11-29T13:50:36.794+01:00  INFO 13595 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-29T13:50:36.843+01:00  WARN 13595 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2023-11-29T13:50:37.625+01:00  INFO 13595 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2023-11-29T13:50:37.629+01:00  INFO 13595 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-29T13:50:38.168+01:00  WARN 13595 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-29T13:50:38.867+01:00  INFO 13595 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./build/h2db/data/demo'
-2023-11-29T13:50:38.933+01:00 DEBUG 13595 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [/Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration/build/resources/main/schema.sql]
-2023-11-29T13:50:38.944+01:00 DEBUG 13595 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS item ( id INT PRIMARY KEY, name VARCHAR(100), price DECIMAL(10 ,2) )
-2023-11-29T13:50:38.947+01:00 DEBUG 13595 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [/Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration/build/resources/main/schema.sql] in 9 ms.
-2023-11-29T13:50:38.949+01:00 DEBUG 13595 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [/Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration/build/resources/main/data.sql]
-2023-11-29T13:50:38.953+01:00 DEBUG 13595 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 5 returned as update count for SQL: DELETE FROM item
-2023-11-29T13:50:38.956+01:00 DEBUG 13595 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO item (id, name, price) values (1, 'Shoes', 60.00)
-2023-11-29T13:50:38.958+01:00 DEBUG 13595 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO item (id, name, price) values (2, 'T-Shirt', 20.00)
-2023-11-29T13:50:38.958+01:00 DEBUG 13595 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO item (id, name, price) values (3, 'Jeans', 40.00)
-2023-11-29T13:50:38.958+01:00 DEBUG 13595 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO item (id, name, price) values (4, 'Sweater', 35.00)
-2023-11-29T13:50:38.959+01:00 DEBUG 13595 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO item (id, name, price) values (5, 'Hat', 15.00)
-2023-11-29T13:50:38.959+01:00 DEBUG 13595 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [/Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration/build/resources/main/data.sql] in 10 ms.
-2023-11-29T13:50:39.093+01:00  INFO 13595 --- [    Test worker] f.e.p.web.rest.ItemResourceIT            : Started ItemResourceIT in 5.511 seconds (process running for 7.237)
+2023-11-29T14:43:16.294+01:00  INFO 14180 --- [    Test worker] f.e.p.web.rest.ItemResourceIT            : Starting ItemResourceIT using Java 17 with PID 14180 (started by ayyub in /Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration)
+2023-11-29T14:43:16.295+01:00  INFO 14180 --- [    Test worker] f.e.p.web.rest.ItemResourceIT            : No active profile set, falling back to 1 default profile: "default"
+2023-11-29T14:43:17.469+01:00  INFO 14180 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-29T14:43:17.603+01:00  INFO 14180 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 1 JPA repository interface.
+2023-11-29T14:43:18.122+01:00  WARN 14180 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2023-11-29T14:43:18.152+01:00  INFO 14180 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-11-29T14:43:18.395+01:00  INFO 14180 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-29T14:43:18.573+01:00  INFO 14180 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2023-11-29T14:43:18.575+01:00  INFO 14180 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-29T14:43:18.713+01:00  INFO 14180 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-29T14:43:18.777+01:00  INFO 14180 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-11-29T14:43:18.816+01:00  INFO 14180 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-11-29T14:43:19.075+01:00  INFO 14180 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-29T14:43:19.125+01:00  WARN 14180 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-11-29T14:43:19.914+01:00  INFO 14180 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-29T14:43:19.968+01:00  INFO 14180 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-29T14:43:20.485+01:00  WARN 14180 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-29T14:43:21.047+01:00  INFO 14180 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-11-29T14:43:21.115+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [/Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration/build/resources/main/schema.sql]
+2023-11-29T14:43:21.129+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS item ( id INT PRIMARY KEY, name VARCHAR(100), price DECIMAL(10 ,2) )
+2023-11-29T14:43:21.138+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [/Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration/build/resources/main/schema.sql] in 12 ms.
+2023-11-29T14:43:21.143+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [/Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration/build/resources/main/data.sql]
+2023-11-29T14:43:21.145+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: DELETE FROM item
+2023-11-29T14:43:21.148+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO item (id, name, price) values (1, 'Shoes', 60.00)
+2023-11-29T14:43:21.149+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO item (id, name, price) values (2, 'T-Shirt', 20.00)
+2023-11-29T14:43:21.150+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO item (id, name, price) values (3, 'Jeans', 40.00)
+2023-11-29T14:43:21.152+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO item (id, name, price) values (4, 'Sweater', 35.00)
+2023-11-29T14:43:21.153+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO item (id, name, price) values (5, 'Hat', 15.00)
+2023-11-29T14:43:21.153+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [/Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration/build/resources/main/data.sql] in 10 ms.
+2023-11-29T14:43:21.153+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [/Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration/build/resources/test/data.sql]
+2023-11-29T14:43:21.155+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : 5 returned as update count for SQL: DELETE FROM item
+2023-11-29T14:43:21.155+01:00 DEBUG 14180 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [/Users/ayyub/Documents/Cours/EFREI Semestre 5/Cloud Integration/projectcloudintegration/build/resources/test/data.sql] in 2 ms.
+2023-11-29T14:43:21.388+01:00  INFO 14180 --- [    Test worker] f.e.p.web.rest.ItemResourceIT            : Started ItemResourceIT in 5.483 seconds (process running for 7.145)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
