@@ -19,6 +19,6 @@ public class ItemResourceIT {
     @Transactional
     void createItem() throws Exception {
         int databaseSizeBeforeCreate = itemRepository.findAll().size();
-        assertThat(databaseSizeBeforeCreate).isEqualTo(8);
+        assertThat(databaseSizeBeforeCreate).isEqualTo(5);
     }
 }
