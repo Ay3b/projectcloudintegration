@@ -66,4 +66,4 @@ jobs:
           arguments: bootJar
 # - uses:actions/checkout@v2
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag:server:$(date +%s)
+        run: docker build . --file Dockerfile -t server:$(date +%s)
